@@ -51,6 +51,8 @@ describe("Testing a button", () => {
   });
 
 
+
+
   it("Button try use a word as increment", () => {
     let count = 0;
 
@@ -66,6 +68,7 @@ describe("Testing a button", () => {
     fireEvent.click(button);
     expect(count).toBe(1);
   });
+
 
 
 

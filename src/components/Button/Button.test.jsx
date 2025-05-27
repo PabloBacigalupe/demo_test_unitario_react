@@ -46,7 +46,8 @@ describe("Testing a button", () => {
       <Button increment={"1000"} onClickFunction={incrementCount} />
     );
     const button = container.querySelector("button");
-    fireEvent.click(button);
+    fireEvent.click(hola);
+    // button
     expect(count).toBe(1000);
   });
 

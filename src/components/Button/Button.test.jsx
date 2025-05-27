@@ -50,5 +50,4 @@ describe("Testing a button", () => {
     expect(count).toBe(1000);
   });
 
-
 });

@@ -51,4 +51,22 @@ describe("Testing a button", () => {
   });
 
 
+  it("Button try use a word as increment", () => {
+    let count = 0;
+
+    const incrementCount = (increment) => {
+      count += increment;
+      return count;
+    };
+
+    const { container } = render(
+      <Button increment={"queso"} onClickFunction={incrementCount} />
+    );
+    const button = container.querySelector("button");
+    fireEvent.click(button);
+    expect(count).toBe(1);
+  });
+
+
+
 });

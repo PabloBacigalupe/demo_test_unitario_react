@@ -5,6 +5,9 @@ on:
     branches: 
       - main
       - develop
+      - pruebas
+      - pruebas_fs
+      - pruebas_cicd
     paths-ignore:
       - "docs/**"
       
